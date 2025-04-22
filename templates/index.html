@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Churn Prediction</title>
+</head>
+<body>
+    <h1>Customer Churn Prediction</h1>
+    <form action="/predict" method="post">
+        {% for i in range(10) %}
+        Feature {{ i+1 }}: <input type="text" name="feature{{ i }}"><br><br>
+        {% endfor %}
+        <input type="submit" value="Predict">
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
