@@ -4,8 +4,8 @@ pipeline {
     stages {
         stage('Clone repo') {
             steps {
-               // git branch: 'main', url: 'https://github.com/DivyanshuKashyap15/Churn_model.git'
-                git credentialsId: 'github-token', url: 'https://github.com/DivyanshuKashyap15/Churn_model.git'
+                git branch: 'main', url: 'https://github.com/DivyanshuKashyap15/Churn_model.git'
+
             }
         }
 
