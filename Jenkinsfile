@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone repo') {
             steps {
-                git 'https://your-repo-url.git'
+                git  'https://github.com/DivyanshuKashyap15/Churn_model.git' 
             }
         }
 
