@@ -10,13 +10,13 @@ pipeline {
 
         stage('Build Docker image') {
             steps {
-                sh 'docker build -t churn-app .'
+                bat 'docker build -t churn-app .'
             }
         }
 
         stage('Run Docker container') {
             steps {
-                sh 'docker-compose up -d'
+                bat 'docker-compose up -d'
             }
         }
 
